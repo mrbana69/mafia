@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista Scontrini</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-family: Impact, sans-serif;
+      font-size: 60px;
+      color: #2c3e50;
+    }
+    ul {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    .btn {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .btn-view {
+      background-color: #3498db;
+      color: white;
+    }
+    .btn-view:hover {
+      background-color: #2980b9;
+    }
+    .btn-download {
+      background-color: #2ecc71;
+      color: white;
+    }
+    .btn-download:hover {
+      background-color: #27ae60;
+    }
+    .receipt {
+      display: none;
+      font-family: 'Courier New', Courier, monospace;
+      width: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px dashed #333;
+      background: #fff;
+      color: #000;
+    }
+    .receipt h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    .receipt p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    .receipt .total {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista Scontrini</h1>
+  <ul id="receiptList">
+    <!-- Gli scontrini verranno caricati dinamicamente da localStorage -->
+  </ul>
+
+  <div id="receipt" class="receipt">
+    <h2>Scontrino</h2>
+    <p id="receiptDetails">Dettagli dello scontrino...</p>
+    <p id="receiptTotal" class="total">Totale: €0.00</p>
+  </div>
+
+  <script src="lista.scontrini.js"></script>
+</body>
+</html>

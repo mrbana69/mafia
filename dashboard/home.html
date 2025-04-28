@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Pannello Aziendale</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-family: Impact, sans-serif;
+      font-size: 60px;
+      color: #2c3e50;
+    }
+    h4 {
+      text-align: center;
+      margin-top: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      color: #34495e;
+    }
+    .options {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      padding: 20px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      width: 250px;
+    }
+    .card h2 {
+      font-size: 22px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    .card p {
+      font-size: 16px;
+      color: #7f8c8d;
+      margin-bottom: 20px;
+    }
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    a:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pannello Aziendale</h1>
+  <h4>Benvenuto nel sistema</h4>
+
+  <div class="options">
+    <div class="card">
+      <h2>Nuovo Ordine</h2>
+      <p>Crea uno scontrino per un ordine.</p>
+      <a href="./crea_scontrini/crea.scontrino.html">Vai</a>
+    </div>
+
+    <div class="card">
+      <h2>Ordini</h2>
+      <p>Visualizza l’elenco degli ordini esistenti.</p>
+      <a href="./lista_scontrini/lista.scontrini.html">Mostra elenco</a>
+    </div>
+  </div>
+</body>
+</html>
